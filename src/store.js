@@ -8,7 +8,8 @@ export default{
           {value:0},
           {value:0}
       ],
-      totalSum:0
+      totalSum:0,
+      
     },
     getters:{
         counterSum: function (state) {

@@ -19,6 +19,10 @@
             },
             plus: function () {
                 this.$store.commit("plusValue",this.index);
+                if(this.value>10){
+                    this.$router.push('/' )
+
+                }
             }
         }
     }

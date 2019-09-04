@@ -9,11 +9,15 @@
 <script>
     export default {
         name: 'counter-sum',
-        computed:{
-             counterSum: function () {
-                return this.$store.getters.counterSum;
+        created:{
+            counterSum: function () {
+                let sum =this.$store.getter.counterSum;
+                if(sum>=10){
+                    this.$router.push('/')
+                }
+                return sum;
             }
-        }
+        }      
     }
 </script>
 <style scoped>

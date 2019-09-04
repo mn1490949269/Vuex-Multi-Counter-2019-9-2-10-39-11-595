@@ -34,7 +34,6 @@
             counters:function(){
                 return this.$store.state.counters;
             },
-          
         },
         // created: function () {
         //     console.log(this.$store.state);
